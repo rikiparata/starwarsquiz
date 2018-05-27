@@ -1,9 +1,15 @@
+body {
+    background-color: black;
+}
+h1 {
+    color: yellow;
+    text-align: center;
+}  
 #quiz {
     background: rgb(214, 212, 212);
     width: 500px;
     border-radius: 10px;
     padding: 10px 20px 10px 20px;
-    float: left;
     margin: auto;
     position: sticky;
     
@@ -29,12 +35,13 @@ input {
 #after_submit {
     visibility: hidden;
     background: whitesmoke;
-    border-radius: 2px;
+    border-radius: 5px;
     font-size: 30px;
     padding: 10px 20px 10px 20px;
     width: 500px;
-    float: left;
-    margin-left: 20px;
+    margin: auto;
+    position: sticky;
+    
 
 
 }
