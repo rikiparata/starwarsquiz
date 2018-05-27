@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Star Wars Quiz</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css" type ="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" type="text/css">
+    <script src = "main.js"></script>
+  </head>
+
+  <body>
+      <!-- Header -->
+      <div class="header">
+          <h1>Star Wars Quiz</h1>
+      </div>
+
+      <!-- Quiz Form -->
+      <form id="quiz" name = "quiz">
+
+          <p>What is the Wookiee's home world?</p>
+          <input type="radio" id = "mc" name = "question1" value="Tatooine"> Tatooine<br>
+          <input type="radio" id = "mc" name = "question2" value="Kashyyyk"> Kashyyyk<br>
+          <input type="radio" id = "mc" name = "question3" value="Hoth"> Hoth<br>
+          <input type="radio" id = "mc" name = "question4" value="Endor"> Endor<br>
+          
+          <p>What was the original name for the first Star Wars movie?</p>
+          <input type="radio" id = "mc" name = "question1" value="Adventures of Luke Starkiller"> Adventures of Luke Starkiller<br>
+          <input type="radio" id = "mc" name = "question2" value="Adventures of Luke Skywalker"> Adventures of Luke Skywalker<br>
+          <input type="radio" id = "mc" name = "question3" value="War In The Stars"> War In The Stars<br>
+          <input type="radio" id = "mc" name = "question4" value="Sith Wars"> Sith Wars<br>
+          
+          <p>In what movie was General Grevious first intorduced?</p>
+          <input type="radio" id = "mc" name = "question1" value="A New Hope"> A New Hope<br>
+          <input type="radio" id = "mc" name = "question2" value="Revenge Of The Sith"> Revenge Of The Sith<br>
+          <input type="radio" id = "mc" name = "question3" value="Attack Of The Clones"> Attack Of The Clones<br>
+          <input type="radio" id = "mc" name = "question4" value="Return Of The Jedi"> Return Of The Jedi<br>
+             
+          <p>What's the name of the famous sound effect that can be heard in every 'Star Wars' movie?</p>
+          <input type="radio" id = "mc" name = "question1" value="Castle Thunder"> Castle Thunder<br>
+          <input type="radio" id = "mc" name = "question2" value="Tarzan Call"> Tarzan Call<br>
+          <input type="radio" id = "mc" name = "question3" value="Wilhelm Scream"> Wilhelm Scream<br>
+          <input type="radio" id = "mc" name = "question4" value="Laser Blast"> Laser Blast<br>
+          
+          <p>What was the creature that attacked Luke Skywalker on Hoth in The Empire Strikes Back?</p>
+          <input type="radio" id = "mc" name = "question1" value="Tauntaun"> Tauntaun<br>
+          <input type="radio" id = "mc" name = "question2" value="Womp Rat"> Womp Rat<br>
+          <input type="radio" id = "mc" name = "question3" value="Wampa"> Wampa<br>
+          <input type="radio" id = "mc" name = "question4" value="Gundark"> Gundark<br>
+          
+          <p>Whose DNA was used in the creation of the Clone Army?</p>
+          <input type="radio" id = "mc" name = "question1" value="Count Dooku"> Count Dooku<br>
+          <input type="radio" id = "mc" name = "question2" value="Boba Fett"> Boba Fett<br>
+          <input type="radio" id = "mc" name = "question3" value="Jango Fett"> Jango Fett<br>
+          <input type="radio" id = "mc" name = "question4" value="Anakin Skywalker"> Anakin Skywalker<br>
+          
+          <p>Where did Darth Vader reveal himself to be Luke's father?</p>
+          <input type="radio" id = "mc" name = "question1" value="Dagobah"> Dagobah<br>
+          <input type="radio" id = "mc" name = "question2" value="The Death Star"> The Death Star<br>
+          <input type="radio" id = "mc" name = "question3" value="Endor"> Endor<br>
+          <input type="radio" id = "mc" name = "question4" value="Cloud City"> Cloud City<br>
+          
+          <p>Who killed Jango Fett?</p>
+          <input type="radio" id = "mc" name = "question1" value="Mace Windu"> Mace Windu<br>
+          <input type="radio" id = "mc" name = "question2" value="Obi-Wan Kenobi"> Obi-Wan Kenobi<br>
+          <input type="radio" id = "mc" name = "question3" value="Anakin Skywalker"> Anakin Skywalker<br>
+          <input type="radio" id = "mc" name = "question4" value="Boba Fett"> Boba Fett<br>
+          
+          <p>What is Count Dooku's Sith name?</p>
+          <input type="radio" id = "mc" name = "question1" value="Darth Tyranus"> Darth Tyranus<br>
+          <input type="radio" id = "mc" name = "question2" value="Darth Sidious"> Darth Sidious<br>
+          <input type="radio" id = "mc" name = "question3" value="Darth Maul"> Darth Maul<br>
+          <input type="radio" id = "mc" name = "question4" value="Darth Rex"> Darth Rex<br>
+          
+          <p>What happened to Luke Skywalker's right hand after Darth Vader cut it off with a lightsaber?</p>
+          <input type="radio" id = "mc" name = "question1" value="Never Seen Again"> Never Seen Again<br>
+          <input type="radio" id = "mc" name = "question2" value="Luke's friends in the Millennim Falcon caught it"> Luke's friends in the Millennim Falcon caught it<br>
+          <input type="radio" id = "mc" name = "question3" value="It was vaporised in the rubbish disposal"> It was vaporised in the rubbish disposal<br>
+          <input type="radio" id = "mc" name = "question4" value="Darth Vader kept it"> Darth Vader kept it<br>
+
+          <input id="button" type="button" value="Submit" onclick="check();">
+
+      </form>
+
+      <div id = "after_submit">
+          <p id = "number_correct"></p>
+      </div>
+
+    
+
+
+
+  </body>
+</html>
